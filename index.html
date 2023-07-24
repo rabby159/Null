@@ -17,11 +17,11 @@
         tailwind.config = {
           theme: {
             extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+                backgroundImage: {
+                    'banner-bg': "url('./images/banner-bg.svg')",
+                },
+            },
+          },
         }
       </script>
 
@@ -41,14 +41,56 @@
 
 </head>
 <body>
-    <header>
-
+    <header class=" bg-banner-bg">
+        <nav class="max-w-screen-xl mx-auto py-10">
+            <div class="navbar">
+                <div class="flex-1">
+                  <a class=""><img src="./images/logo 1.png" alt=""></a>
+                </div>
+                <div class="flex-none mr-20">
+                  <ul class="menu menu-horizontal px-1">
+                    
+                    <li class="">
+                        
+                      <details>
+                        <summary class="text-white">
+                          Courses
+                        </summary>
+                        <ul class="p-2 bg-base-100">
+                          <li><a>MERN Stack</a></li>
+                          <li><a>Full Stack</a></li>
+                          <li><a>UI/UX Design</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-none mr-20">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="">
+                      <details>
+                        <summary class="text-white">
+                            Platforms
+                        </summary>
+                        <ul class="p-2 bg-base-100">
+                          <li><a>MERN Stack</a></li>
+                          <li><a>Full Stack</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
+                <li><a class="text-white p-2 mr-20" href="">Resources</a></li>
+                <li><a class="text-white p-2" href="">About</a></li>
+              </div>
+        </nav>
+        
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
